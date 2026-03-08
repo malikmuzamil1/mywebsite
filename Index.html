@@ -1,50 +1,81 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<title>Muzamil Portfolio</title>
+<title>Muzamil | Web Developer</title>
 
 <style>
 
 body{
 font-family: Arial;
-background:#f4f4f4;
-text-align:center;
 margin:0;
+background:#f4f4f4;
 }
 
 header{
-background:#333;
+background:#111;
 color:white;
-padding:30px;
+padding:40px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+font-size:40px;
+}
+
+header p{
+color:#ccc;
 }
 
 section{
-padding:20px;
+padding:40px;
+text-align:center;
 }
 
 h2{
 color:#333;
+margin-bottom:20px;
 }
 
-a{
+.skills p{
+background:white;
 display:inline-block;
-margin-top:10px;
 padding:10px 20px;
+margin:5px;
+border-radius:5px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.projects{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.project{
+background:white;
+padding:20px;
+width:200px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.button{
+display:inline-block;
+margin-top:15px;
+padding:12px 25px;
 background:#25D366;
 color:white;
 text-decoration:none;
 border-radius:5px;
 }
 
-a:hover{
-background:#1ebe5d;
-}
-
 footer{
-background:#333;
+background:#111;
 color:white;
-padding:10px;
+padding:20px;
+text-align:center;
 }
 
 </style>
@@ -56,33 +87,43 @@ padding:10px;
 <header>
 <h1>Muzamil</h1>
 <p>BCA Student | Web Developer</p>
+<a class="button" href="https://wa.me/919622910830">Hire Me</a>
 </header>
 
 <section>
 <h2>About Me</h2>
-<p>I build simple websites for businesses and portfolios.</p>
+<p>I am a BCA student and beginner web developer.  
+I build simple websites for businesses and portfolios.</p>
 </section>
 
-<section>
+<section class="skills">
 <h2>My Skills</h2>
+
 <p>HTML</p>
 <p>CSS</p>
-<p>Basic JavaScript</p>
-</section>
+<p>JavaScript</p>
+<p>Responsive Design</p>
 
-<section>
-<h2>My Services</h2>
-<p>Business Website Development</p>
-<p>Portfolio Websites</p>
-<p>Landing Pages</p>
 </section>
 
 <section>
 <h2>My Projects</h2>
-<p>Restaurant Website</p>
-<p>Coaching Center Website</p>
+
+<div class="projects">
+
+<div class="project">
+<h3>Restaurant Website</h3>
+<p>Modern restaurant landing page</p>
+</div>
+
+<div class="project">
+<h3>Coaching Center</h3>
+<p>Education website design</p>
+</div>
+
+</div>
+
 </section>
-  <img src="https://via.placeholder.com/150" width="150">
 
 <section>
 <h2>Contact Me</h2>
@@ -91,14 +132,14 @@ padding:10px;
 
 <p>WhatsApp: +919622910830</p>
 
-<a href="https://wa.me/919622910830">
-Hire Me on WhatsApp
+<a class="button" href="https://wa.me/919622910830">
+Chat on WhatsApp
 </a>
 
 </section>
 
 <footer>
-<p>© 2026 Muzamil</p>
+<p>© 2026 Muzamil | Web Developer</p>
 </footer>
 
 </body>
